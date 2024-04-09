@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 *::selection{
-    background-color: #EF9D71;
+    background-color: white
 }
 
 body {
@@ -20,14 +20,14 @@ body[theme="cyan"]{
     background-color: rgb(30, 181, 223);    
 }
 body[theme="cyan"] .section{
-    color: rgb(12, 52, 63);    
+    color: rgb(255, 255, 255);    
 }
 
 body[theme="salmon"]{
-    background-color: salmon
+    background-color: #EF9D71
 }
 body[theme="salmon"] .section{
-    color: rgb(104, 34, 22)
+    color: #121212,
 }
 
 
@@ -37,6 +37,19 @@ body[theme="light"]{
 body[theme="light"] .section{
     color: rgb(0, 0, 0)
 }
+
+
+body[theme="cyan"] button {
+  background-color: lightcyan;
+  color: #242424;
+
+}
+
+body[theme="cyan"] a::before,
+body[theme="cyan"] a::after {
+  background-color: rgb(66, 236, 236);
+}
+
 
 a {
     position: relative;
@@ -87,13 +100,7 @@ a {
     position: relative;
     z-index: 3;
   }
-  
-  button {
-    background-color: none;
-    text-decoration: none;
-    background-color: #212121;
-    border: none;
-  }
+ 
 
   ::-webkit-scrollbar {
     width: 4px; 
